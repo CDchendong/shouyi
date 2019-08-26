@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PK2-X8-PnC" customClass="SYShopCouponBottom">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有更多优惠券" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO7-4K-HP3">
+                    <rect key="frame" x="0.0" y="0.0" width="182.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-aU-gaU">
+                    <rect key="frame" x="192.5" y="0.0" width="182.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="查看已失效的券">
+                        <color key="titleColor" red="1" green="0.01176470588" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um6-Lt-s21">
+                    <rect key="frame" x="187" y="4" width="1" height="22"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="kLE-Sj-zjm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="um6-Lt-s21" firstAttribute="top" secondItem="PK2-X8-PnC" secondAttribute="top" constant="4" id="4Cg-9h-KEh"/>
+                <constraint firstItem="tO7-4K-HP3" firstAttribute="leading" secondItem="Vsg-oJ-Sea" secondAttribute="leading" id="5Fh-5u-z4l"/>
+                <constraint firstItem="IOY-aU-gaU" firstAttribute="width" secondItem="tO7-4K-HP3" secondAttribute="width" id="9Vb-Zn-WU5"/>
+                <constraint firstItem="IOY-aU-gaU" firstAttribute="leading" secondItem="tO7-4K-HP3" secondAttribute="trailing" constant="10" id="Dv2-oK-4yf"/>
+                <constraint firstItem="IOY-aU-gaU" firstAttribute="leading" secondItem="um6-Lt-s21" secondAttribute="trailing" constant="4.5" id="E7I-5Q-pYf"/>
+                <constraint firstItem="IOY-aU-gaU" firstAttribute="top" secondItem="Vsg-oJ-Sea" secondAttribute="top" id="EUe-Ea-uZe"/>
+                <constraint firstAttribute="bottom" secondItem="um6-Lt-s21" secondAttribute="bottom" constant="4" id="Fcm-1c-HJl"/>
+                <constraint firstItem="um6-Lt-s21" firstAttribute="leading" secondItem="tO7-4K-HP3" secondAttribute="trailing" constant="4.5" id="MCJ-mv-Fju"/>
+                <constraint firstItem="IOY-aU-gaU" firstAttribute="bottom" secondItem="Vsg-oJ-Sea" secondAttribute="bottom" id="QyT-qp-um0"/>
+                <constraint firstItem="tO7-4K-HP3" firstAttribute="bottom" secondItem="Vsg-oJ-Sea" secondAttribute="bottom" id="pZQ-RH-Fbc"/>
+                <constraint firstItem="tO7-4K-HP3" firstAttribute="top" secondItem="Vsg-oJ-Sea" secondAttribute="top" id="qrw-oB-G5F"/>
+                <constraint firstItem="Vsg-oJ-Sea" firstAttribute="trailing" secondItem="IOY-aU-gaU" secondAttribute="trailing" id="tVI-CT-6jb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Vsg-oJ-Sea"/>
+            <point key="canvasLocation" x="304.80000000000001" y="327.4362818590705"/>
+        </view>
+    </objects>
+</document>

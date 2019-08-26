@@ -1,0 +1,27 @@
+platform :ios, '8.0'
+target 'CustomApp' do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'MJExtension'
+pod 'SDCycleScrollView'
+pod 'YYModel'
+pod 'YYImage'
+pod 'IQKeyboardManager'
+# 友盟依赖库
+pod 'UMCCommon'
+pod 'UMCSecurityPlugins'
+# U-Share SDK UI模块（分享面板，建议添加）
+pod 'UMCShare/UI'
+# 集成微信(完整版14.4M)
+pod 'UMCShare/Social/WeChat'
+# 集成QQ/QZone/TIM(完整版7.6M)
+pod 'UMCShare/Social/QQ'
+# 友盟推送
+pod 'UMCPush'
+pod 'Qiniu'
+pod 'YYImage'
+pod 'ReactiveObjC'
+end

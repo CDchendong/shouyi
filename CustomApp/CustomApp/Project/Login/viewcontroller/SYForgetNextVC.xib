@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SYForgetNextVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="设置密码 " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O11-U3-ClV">
+                    <rect key="frame" x="35" y="70" width="305" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HBx-hk-Rpx"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utk-2e-7pK">
+                    <rect key="frame" x="35" y="110" width="305" height="1"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="JsE-xk-LPL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IE7-nS-2cA">
+                    <rect key="frame" x="35" y="151" width="305" height="1"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="UZV-9R-yZh"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请再次输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cRY-bL-nba">
+                    <rect key="frame" x="35" y="111" width="305" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zF6-nb-u9s"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSM-bn-Uhx">
+                    <rect key="frame" x="68" y="227" width="239" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="O8l-vB-P2i"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76" id="xKN-Ts-KUo"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="sy_login_img"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="utk-2e-7pK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="0EO-do-sJY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="O11-U3-ClV" secondAttribute="trailing" constant="35" id="6IK-LK-IpT"/>
+                <constraint firstItem="ZSM-bn-Uhx" firstAttribute="top" secondItem="IE7-nS-2cA" secondAttribute="bottom" constant="75" id="8f4-ma-RWY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ZSM-bn-Uhx" secondAttribute="trailing" constant="68" id="AWi-jd-DZf"/>
+                <constraint firstAttribute="trailing" secondItem="utk-2e-7pK" secondAttribute="trailing" constant="35" id="Hxz-4s-YgV"/>
+                <constraint firstItem="cRY-bL-nba" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="35" id="Mdv-fG-xl5"/>
+                <constraint firstItem="cRY-bL-nba" firstAttribute="top" secondItem="utk-2e-7pK" secondAttribute="bottom" id="NRL-tY-8If"/>
+                <constraint firstItem="IE7-nS-2cA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="OQX-ce-fiH"/>
+                <constraint firstItem="O11-U3-ClV" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="35" id="fJ1-zR-9yZ"/>
+                <constraint firstAttribute="trailing" secondItem="IE7-nS-2cA" secondAttribute="trailing" constant="35" id="g0S-AZ-jXo"/>
+                <constraint firstItem="utk-2e-7pK" firstAttribute="top" secondItem="O11-U3-ClV" secondAttribute="bottom" id="gIY-Y4-fp6"/>
+                <constraint firstItem="O11-U3-ClV" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="gia-Ei-B5X"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cRY-bL-nba" secondAttribute="trailing" constant="35" id="lej-Gz-Tp4"/>
+                <constraint firstItem="ZSM-bn-Uhx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="68" id="u8m-UV-8Fc"/>
+                <constraint firstItem="IE7-nS-2cA" firstAttribute="top" secondItem="cRY-bL-nba" secondAttribute="bottom" id="zWx-8y-evd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sy_login_img" width="234.5" height="76"/>
+    </resources>
+</document>
